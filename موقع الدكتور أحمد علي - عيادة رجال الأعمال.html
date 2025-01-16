@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///C:/Users/Sam%20Tech/html/index.html -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="عيادة الدكتور أحمد علي - أفضل الخدمات الطبية لرجال الأعمال. كشف طبي، استشارات أونلاين، تحاليل طبية، ومتابعة أمراض مزمنة.">
+    <title>موقع الدكتور أحمد علي - عيادة رجال الأعمال</title>
+    <link href="./موقع الدكتور أحمد علي - عيادة رجال الأعمال_files/css2" rel="stylesheet">
+    <link href="./موقع الدكتور أحمد علي - عيادة رجال الأعمال_files/aos.css" rel="stylesheet"> <!-- مكتبة AOS للرسوم المتحركة -->
+    <style>
+        /* CSS هنا */
+        body {
+            font-family: 'Almarai', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+            color: #fff;
+            text-align: right;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            padding: 150px 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0 20px;
+        }
+
+        .hero .btn {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background-color: #ffbb00;
+        }
+
+        .about, .services, .booking, .contact, .testimonials, .blog {
+            padding: 50px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 20px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #ffcc00;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        .doctor-circle {
+            width: 250px;
+            height: 250px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid #ffcc00;
+            margin: 20px auto;
+        }
+
+        .doctor-circle::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent);
+            animation: sparkle 2s infinite;
+        }
+
+        @keyframes sparkle {
+            0% { transform: scale(0); opacity: 1; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+
+        .doctor-circle h3 {
+            font-size: 2.5em;
+            color: black;
+            text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+            animation: glow 2s infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; }
+            50% { text-shadow: 0 0 20px white, 0 0 40px white, 0 0 60px white; }
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services ul li {
+            background-color: rgba(255, 204, 0, 0.1);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            border: 2px solid #ffcc00;
+        }
+
+        .booking form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .booking label {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #ffcc00;
+        }
+
+        .booking input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            font-size: 1em;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .booking button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .booking button:hover {
+            background-color: #ffbb00;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.2em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .about p, .services ul li, .booking label, .contact p, .testimonials p, .blog p {
+            font-size: 1.5em;
+            line-height: 1.8;
+        }
+
+        .testimonials .testimonial {
+            background-color: rgba(255, 204, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #ffcc00;
+        }
+
+        .testimonials .testimonial h3 {
+            color: #ffcc00;
+            font-size: 1.8em;
+        }
+
+        .blog .post {
+            background-color: rgba(255, 204, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #ffcc00;
+        }
+
+        .blog .post h3 {
+            color: #ffcc00;
+            font-size: 1.8em;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-bar .progress {
+            height: 10px;
+            background-color: #ffcc00;
+            width: 0;
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+    <header>
+        <div class="container">
+            <h1>دكتور أحمد علي - عيادة رجال الأعمال</h1>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/Sam%20Tech/html/index.html#home">الرئيسية</a></li>
+                    <li><a href="file:///C:/Users/Sam%20Tech/html/index.html#about">عن الدكتور</a></li>
+                    <li><a href="file:///C:/Users/Sam%20Tech/html/index.html#services">الخدمات</a></li>
+                    <li><a href="file:///C:/Users/Sam%20Tech/html/index.html#booking">حجز موعد</a></li>
+                    <li><a href="file:///C:/Users/Sam%20Tech/html/index.html#testimonials">الشهادات</a></li>
+                    <li><a href="file:///C:/Users/Sam%20Tech/html/index.html#blog">المدونة</a></li>
+                    <li><a href="file:///C:/Users/Sam%20Tech/html/index.html#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="doctor-circle">
+                <h3>دكتور أحمد علي</h3>
+            </div>
+            <h2 data-aos="fade-up" class="aos-init">مرحبًا بكم في عيادة الدكتور أحمد علي!</h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="aos-init">هنا بنقدملك أفضل الخدمات الطبية بجودة عالية وأسعار تنافسية. العيادة مصممة خصيصًا لرجال الأعمال اللي مش عندهم وقت!</p>
+            <a href="file:///C:/Users/Sam%20Tech/html/index.html#booking" class="btn aos-init" data-aos="fade-up" data-aos-delay="400">احجز موعدك دلوقتي!</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-aos="fade-up" class="aos-init">عن الدكتور أحمد علي</h2>
+            <div class="doctor-circle aos-init" data-aos="zoom-in">
+                <h3>دكتور أحمد علي</h3>
+            </div>
+            <p data-aos="fade-up" data-aos-delay="200" class="aos-init">الدكتور أحمد علي هو واحد من أبرز الأطباء في مجال أمراض الباطنة في مصر والشرق الأوسط. مع خبرة تزيد عن 20 عامًا، الدكتور أحمد نجح في علاج آلاف المرضى من مختلف الفئات العمرية، وخصوصًا رجال الأعمال والمديرين التنفيذيين اللي حياتهم مليانة ضغط وتحديات.</p>
+            <p data-aos="fade-up" data-aos-delay="400" class="aos-init">الدكتور أحمد حاصل على شهادة الدكتوراه في أمراض الباطنة من جامعة القاهرة، بالإضافة إلى شهادات تدريبية متقدمة من جامعات عالمية مثل هارفارد وجونز هوبكنز. هو كمان عضو في جمعية أطباء الباطنة العالمية، وشارك في مؤتمرات طبية دولية كمتحدث رئيسي.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 data-aos="fade-up" class="aos-init">الخدمات</h2>
+            <ul>
+                <li data-aos="fade-up" data-aos-delay="200" class="aos-init">كشف طبي عام - علشان تعرف حالتك الصحية.</li>
+                <li data-aos="fade-up" data-aos-delay="300" class="aos-init">استشارات أونلاين - من بيتك أو مكتبك.</li>
+                <li data-aos="fade-up" data-aos-delay="400" class="aos-init">تحاليل طبية - دقة عالية وسرعة في النتائج.</li>
+                <li data-aos="fade-up" data-aos-delay="500" class="aos-init">متابعة أمراض مزمنة - علشان تعيش حياتك بسلام.</li>
+                <li data-aos="fade-up" data-aos-delay="600" class="aos-init">برامج تغذية متخصصة - علشان تحافظ على صحتك.</li>
+                <li data-aos="fade-up" data-aos-delay="700" class="aos-init">فحوصات دورية شاملة - علشان تطمن على نفسك.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 data-aos="fade-up" class="aos-init">حجز موعد</h2>
+            <form id="bookingForm">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required="" data-aos="fade-up" data-aos-delay="200" class="aos-init">
+
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" name="phone" required="" data-aos="fade-up" data-aos-delay="300" class="aos-init">
+
+                <label for="date">تاريخ الموعد:</label>
+                <input type="date" id="date" name="date" required="" data-aos="fade-up" data-aos-delay="400" class="aos-init">
+
+                <button type="submit" data-aos="fade-up" data-aos-delay="500" class="aos-init">احجز الآن</button>
+            </form>
+            <p id="confirmationMessage" data-aos="fade-up" data-aos-delay="600" class="aos-init"></p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 data-aos="fade-up" class="aos-init">شهادات المرضى</h2>
+            <div class="testimonial aos-init" data-aos="fade-up" data-aos-delay="200">
+                <h3>محمد أحمد</h3>
+                <p>"الدكتور أحمد علي من أفضل الأطباء اللي قابلتهم في حياتي. تعامله راقي وفهمه لظروفي كان ممتازًا."</p>
+            </div>
+            <div class="testimonial aos-init" data-aos="fade-up" data-aos-delay="300">
+                <h3>سارة خالد</h3>
+                <p>"شكرًا للدكتور أحمد على مساعدته لي في التغلب على مشكلاتي الصحية. أنصح به بشدة."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 data-aos="fade-up" class="aos-init">المدونة</h2>
+            <div class="post aos-init" data-aos="fade-up" data-aos-delay="200">
+                <h3>نصائح للحفاظ على الصحة أثناء العمل</h3>
+                <p>في هذه المقالة، نقدم لكم نصائح مهمة للحفاظ على صحتك أثناء العمل لساعات طويلة.</p>
+            </div>
+            <div class="post aos-init" data-aos="fade-up" data-aos-delay="300">
+                <h3>كيفية التعامل مع الضغط النفسي</h3>
+                <p>تعرف على أفضل الطرق للتعامل مع الضغط النفسي وتأثيره على صحتك.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-aos="fade-up" class="aos-init">اتصل بنا</h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="aos-init">العنوان: شارع الجمهورية، القاهرة</p>
+            <p data-aos="fade-up" data-aos-delay="300" class="aos-init">الهاتف: 0123456789</p>
+            <p data-aos="fade-up" data-aos-delay="400" class="aos-init">الإيميل: info@drahmedali.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="doctor-circle aos-init" data-aos="zoom-in">
+                <h3>دكتور أحمد علي</h3>
+            </div>
+            <p>© 2023 دكتور أحمد علي. عيادة رجال الأعمال.</p>
+        </div>
+    </footer>
+
+    <script src="./موقع الدكتور أحمد علي - عيادة رجال الأعمال_files/aos.js.download"></script>
+    <script>
+        // تهيئة مكتبة AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        // JavaScript هنا
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+
+            const confirmationMessage = `شكرًا ${name}! تم حجز موعدك بتاريخ ${date}. الدكتور هيقوم يتصل بك على رقم ${phone}. استنى المكالمة!`;
+            document.getElementById('confirmationMessage').textContent = confirmationMessage;
+
+            document.getElementById('bookingForm').reset();
+
+            // عرض شريط التقدم
+            const progressBar = document.querySelector('.progress-bar .progress');
+            progressBar.style.width = '100%';
+        });
+    </script>
+
+</body></html>
